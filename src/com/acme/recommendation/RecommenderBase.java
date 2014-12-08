@@ -11,7 +11,7 @@ public class RecommenderBase {
 
     public static DataModel getDataModel() throws TasteException {
         MysqlConnectionPoolDataSource dataSource = new MysqlConnectionPoolDataSource();
-        dataSource.setURL("jdbc:mysql://localhost/drupal7?user=root&password=root");
+        dataSource.setURL("jdbc:mysql://localhost/drupal7?user=USER&password=PASSWORD");
 
         JDBCDataModel dm = new MySQLJDBCDataModel(dataSource, "rec_vote", "uid", "nid", "vote", null);
         DataModel reloadFromJDBCDataModel = new ReloadFromJDBCDataModel(dm);

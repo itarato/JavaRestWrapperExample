@@ -13,6 +13,15 @@ import java.util.ArrayList;
 @Path("recommendation/{uid}/{count}")
 public class Recommendation {
 
+    /**
+     * Return recommendations.
+     * @param long uid
+     *  User ID
+     * @param int count
+     *  Number of items to return.
+     * @return String
+     * @throws Exception
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String getIt(@PathParam("uid") String uid, @PathParam("count") String count) throws Exception {

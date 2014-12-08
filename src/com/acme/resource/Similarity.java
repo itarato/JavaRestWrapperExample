@@ -19,6 +19,7 @@ import java.util.ArrayList;
 public class Similarity {
 
     /**
+     * Returns similarity recommendations.
      * @return String that will be returned as a application/json response.
      */
     @GET
